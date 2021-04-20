@@ -2,6 +2,7 @@ package com.example.appkotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             if(count % 2 == 0) {
                 toastShort("${count}는/은 2의 배수 입니다.  ==> 짝수")
             }else{
-                toastShort("${count}는/은 2의 배수가 아닙니다. ==> 홀수")
+                toastShort("${count}는/은 2의 배수가 아닙니다. ==> 홀수", Toast.LENGTH_LONG)
             }
         }
 
