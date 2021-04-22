@@ -20,8 +20,14 @@ class KotlinTest {
         Assert.assertEquals("John", person.name)
         Assert.assertEquals("moonkihoon", person.nickname)
 
+//        코틀린에서는 new 생성자를 사용하지 않는다!
         val prp = PropertySample()
         prp.name = "kihoon"
+
+        var personTest = PersonTest("Moon")
+        personTest.age = 29
+
+        Assert.assertEquals(29, personTest.age)
 
 
     }

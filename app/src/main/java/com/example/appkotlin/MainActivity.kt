@@ -14,7 +14,8 @@ class MainActivity : AppCompatActivity() {
             toastShort("클릭")
         }
 
-
+        var personTest = PersonTest("Moon")
+        personTest.age = 29
 
         edtBtn.setOnClickListener {
 
