@@ -18,3 +18,5 @@ class PropertySample {
             return "Alice"
         }
 }
+
+var batman1 = Batman("크리스찬 베일")
