@@ -30,6 +30,23 @@ fun main() {
     println("Full Email address : ${privateUser.nickname}")
     println("half Email address : ${subscribingUser.nickname}")
 
+//    Field Test
+    var backingTest = Backing()
+    backingTest.count = -1
+    var btInt = backingTest.count
+
+    println(btInt)
+
+
 //    println(PrivateUser("test@kotlinlang.org").nickname)
 //    println(SubscribingUser("test@kotlinlang.org").nickname)
+}
+
+class Backing() {
+    var count = 0
+        set(value) {
+            if(value >= 0) {
+                field = value
+            }
+        }
 }
